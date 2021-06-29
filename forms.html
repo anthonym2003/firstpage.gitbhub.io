@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h2>Forms</h2>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <form>
+        <section class="info">
+          <label for="name">What is your name?</label>
+          <input type="text" id="name" name="name" />
+          <br />
+          <br />
+        </section>
+        <section class="mf">
+          <label for="gender">What is your gender?</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <br />
+          <br />
+        </section>
+        <section class="bulk">
+          <span>Did you like my page?</span>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="answer" value="yes" />
+          <label for="no">No</label>
+          <input type="radio" id="no" name="answer" value="no" />
+          <br />
+          <br />
+          <label for="better">What could I improve on?</label>
+          <br />
+          <textarea
+            id="better"
+            name="better"
+            placeholder="You can improve on ..."
+            rows="5"
+            cols="30"
+          >
+          </textarea>
+          <br />
+          <br />
+          <label for="fav">What was your favorite part of my website?</label>
+          <input id="fav" name="fav" list="sections" />
+          <datalist id="sections">
+            <option value="Intro"></option>
+            <option value="Wildlife"></option>
+            <option value="Media"></option>
+          </datalist>
+          <br />
+          <br />
+          <label for="cool">Were the photos/videos I chose cool?</label>
+          <br />
+          <span>No</span>
+          <input type="range" min="0" max="10" step="1" name="cool" id="cool" />
+          <span>Yes</span>
+          <p>What should I work on next?</p>
+          <label for="city">City Page</label>
+          <input type="checkbox" id="city" name="next" value="city" />
+          <label for="animal">Wildlife Page</label>
+          <input type="checkbox" name="next" value="animal" id="animal" />
+          <label for="space">Space Page</label>
+          <input type="checkbox" id="space" name="next" value="space" />
+          <br />
+          <br />
+          <input type="submit" value="Submit" />
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
